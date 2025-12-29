@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Habitats</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        body {
+            background: #eef3f1;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(to right, #1f5f43, #3c8c6e);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        .habitat {
+            background: white;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .habitat img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .habitat-content {
+            padding: 20px;
+        }
+
+        .habitat-content h2 {
+            color: #1f5f43;
+            margin-bottom: 10px;
+        }
+
+        .habitat-content p {
+            font-size: 15px;
+        }
+
+        .animals {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        
+        .back-home {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: #1f5f43;
+            color: white;
+            text-decoration: none;
+            padding: 14px 18px;
+            border-radius: 50px;
+            font-size: 14px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s, background 0.3s;
+            z-index: 1000;
+        }
+
+        .back-home:hover {
+            background: #174734;
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .habitat {
+                grid-template-columns: 1fr;
+            }
+
+            .habitat img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Wildlife Habitats</h1>
+        <p>Discover natural homes of Tanzania’s wildlife</p>
+    </header>
+
+    <main>
+
+       
+        <section class="habitat">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Amani_Forest%2C_Tanzania_%2851531946360%29.jpg" alt="Forest Habitat">
+            <div class="habitat-content">
+                <h2>Forest Habitat</h2>
+                <p>
+                    Tanzania’s forests are rich in biodiversity. Key regions include the Amani Nature Reserve in Tanga, 
+                    Uluguru Mountains near Morogoro and the Eastern Arc Mountains. Forests are home to primates, 
+                    birds, and countless plant species.
+                </p>
+                <p class="animals">Animals found: Colobus monkeys, Sykes monkeys, Birds, Insects</p>
+            </div>
+        </section>
+
+        
+        <section class="habitat">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Flora_of_Tanzania_1088_Nevit.jpg" alt="Savannah Habitat">
+            <div class="habitat-content">
+                <h2>Savannah Habitat</h2>
+                <p>
+                    Savannahs dominate northern Tanzania, especially in Serengeti National Park, 
+                    Ngorongoro Conservation Area and parts of Tarangire National Park. 
+                    These grasslands support large herbivores and predators.
+                </p>
+                <p class="animals">Animals found: Lions, Zebras, Wildebeest, Giraffes, Elephants</p>
+            </div>
+        </section>
+
+        
+        <section class="habitat">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Gearagh_Wetlands_3.jpg" alt="Wetland Habitat">
+            <div class="habitat-content">
+                <h2>Wetland Habitat</h2>
+                <p>
+                    Wetlands include rivers, lakes, and swamps such as Lake Manyara National Park, 
+                    Pangani River Delta, and Selous Game Reserve. They provide breeding grounds 
+                    for fish, birds, and crocodiles.
+                </p>
+                <p class="animals">Animals found: Hippos, Crocodiles, Fish, Flamingos, Water birds</p>
+            </div>
+        </section>
+
+        
+        <section class="habitat">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Spotted_a_Camel_in_Dodoma.jpg" alt="Semi-Arid Habitat">
+            <div class="habitat-content">
+                <h2>Semi-Arid & Desert Habitat</h2>
+                <p>
+                    Semi-arid regions are found in Dodoma, Lolkisale, and parts of Kitulo Plateau. 
+                    Animals here have adapted to scarce water and high temperatures.
+                </p>
+                <p class="animals">Animals found: Camels, Snakes, Lizards, Small mammals like rats and moles</p>
+            </div>
+        </section>
+
+    </main>
+
+    <a href="index.html" class="back-home">← Back to Home</a>
+
+    <footer>
+        <p>&copy; 2025 Wildlife Website | Tanzania</p>
+    </footer>
+
+</body>
+</html>
