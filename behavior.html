@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Behavior - Nature's Fascinating Patterns</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f8fffe 0%, #e8f5f3 100%);
+            color: #1a3a2e;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2d5e4f 0%, #1a3a2e 100%);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .intro {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            box-shadow: 0 2px 8px rgba(45, 94, 79, 0.1);
+            border-left: 4px solid #3d7a5f;
+        }
+
+        .intro h2 {
+            color: #2d5e4f;
+            margin-bottom: 1rem;
+        }
+
+        .animals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .animal-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(45, 94, 79, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .animal-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(45, 94, 79, 0.25);
+        }
+
+        /* Added image container styles */
+        .animal-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .animal-header {
+            background: linear-gradient(135deg, #3d7a5f 0%, #2d5e4f 100%);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .animal-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .animal-header .scientific-name {
+            font-style: italic;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .animal-content {
+            padding: 1.5rem;
+        }
+
+        .behavior-section {
+            margin-bottom: 1rem;
+        }
+
+        .behavior-title {
+            color: #2d5e4f;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .behavior-title::before {
+            content: "●";
+            color: #52b788;
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #d8f3dc;
+        }
+
+        .tag {
+            background: #d8f3dc;
+            color: #1a3a2e;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        footer {
+            background: #1a3a2e;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .animals-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .back_home{
+            display: inline-block;
+            margin-bottom: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #2d5e4f;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Animal Behavior</h1>
+        <p>Exploring the Fascinating World of Nature's Instincts and Social Patterns</p>
+    </header>
+
+   <div class="container">
+    <a class="back_home"  href="index.html">Back Home</a>
+    <div class="intro">
+        <h2>Understanding Animal Behavior</h2>
+        <p>
+            Animal behavior encompasses the patterns of activity and interaction that animals exhibit in their natural environments.
+            Each species has evolved unique behaviors that enhance survival, communication, and reproduction.
+            Below is a collection of ten diverse animals and their true behavioral characteristics.
+        </p>
+    </div>
+
+    <div class="animals-grid">
+
+    <!-- 1. African Elephant -->
+    <div class="animal-card">
+        <img src="aikambe-assets/elephant.jpg" alt="African Elephant" class="animal-image">
+        <div class="animal-header">
+            <h3>African Elephant</h3>
+            <span class="scientific-name">Loxodonta africana</span>
+        </div>
+        <div class="animal-content">
+            <div class="behavior-section">
+                <div class="behavior-title">Social Structure</div>
+                <p>Live in matriarchal herds led by the oldest female, with strong family bonds.</p>
+            </div>
+            <div class="behavior-section">
+                <div class="behavior-title">Communication</div>
+                <p>Use infrasonic calls to communicate over long distances.</p>
+            </div>
+            <div class="behavior-section">
+                <div class="behavior-title">Memory & Emotion</div>
+                <p>Highly intelligent animals capable of empathy and mourning.</p>
+            </div>
+            <div class="tag-container">
+                <span class="tag">Herbivore</span>
+                <span class="tag">Social</span>
+                <span class="tag">Intelligent</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Lion -->
+    <div class="animal-card">
+        <img src="aikambe-assets/lion.jpg" alt="Lion" class="animal-image">
+        <div class="animal-header">
+            <h3>Lion</h3>
+            <span class="scientific-name">Panthera leo</span>
+        </div>
+        <div class="animal-content">
+            <div class="behavior-section">
+                <div class="behavior-title">Pride Structure</div>
+                <p>Live in prides consisting of females, cubs, and a coalition of males.</p>
+            </div>
+            <div class="behavior-section">
+                <div class="behavior-title">Cooperative Hunting</div>
+                <p>Females hunt cooperatively using coordinated ambush strategies.</p>
+            </div>
+            <div class="behavior-section">
+                <div class="behavior-title">Territorial Roaring</div>
+                <p>Males roar to defend territory and communicate with pride members.</p>
+            </div>
+            <div class="tag-container">
+                <span class="tag">Carnivore</span>
+                <span class="tag">Apex Predator</span>
+                <span class="tag">Social</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Bottlenose Dolphin (Coastal Tanzania) -->
+    <div class="animal-card">
+        <img src="aikambe-assets/dolphin.jpg" alt="Bottlenose Dolphin" class="animal-image">
+        <div class="animal-header">
+            <h3>Bottlenose Dolphin</h3>
+            <span class="scientific-name">Tursiops truncatus</span>
+        </div>
+        <div class="animal-content">
+            <div class="behavior-section">
+                <div class="behavior-title">Echolocation</div>
+                <p>Use sonar clicks to navigate and locate prey underwater.</p>
+            </div>
+            <div class="behavior-section">
+                <div class="behavior-title">Social Bonds</div>
+                <p>Live in pods and cooperate while hunting fish.</p>
+            </div>
+            <div class="behavior-section">
+                <div class="behavior-title">Play Behavior</div>
+                <p>Known for playful interactions and acrobatic swimming.</p>
+            </div>
+            <div class="tag-container">
+                <span class="tag">Marine</span>
+                <span class="tag">Social</span>
+                <span class="tag">Intelligent</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. African Buffalo -->
+    <div class="animal-card">
+        <img src="aikambe-assets/buffalo.jpg" alt="African Buffalo" class="animal-image">
+        <div class="animal-header">
+            <h3>African Buffalo</h3>
+            <span class="scientific-name">Syncerus caffer</span>
+        </div>
+        <div class="animal-content">
+            <div class="behavior-section">
+                <div class="behavior-title">Herd Living</div>
+                <p>Live in large herds for protection against predators.</p>
+            </div>
+            <div class="behavior-section">
+                <div class="behavior-title">Defensive Behavior</div>
+                <p>Will aggressively defend injured members from predators.</p>
+            </div>
+            <div class="behavior-section">
+                <div class="behavior-title">Daily Movement</div>
+                <p>Move together to grazing and watering areas.</p>
+            </div>
+            <div class="tag-container">
+                <span class="tag">Herbivore</span>
+                <span class="tag">Herd</span>
+                <span class="tag">Dangerous</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. Masai Giraffe -->
+    <div class="animal-card">
+        <img src="aikambe-assets/maasai-giraffe.jpg" alt="Masai Giraffe" class="animal-image">
+        <div class="animal-header">
+            <h3>Masai Giraffe</h3>
+            <span class="scientific-name">Giraffa tippelskirchi</span>
+        </div>
+        <div class="animal-content">
+            <div class="behavior-section">
+                <div class="behavior-title">Feeding Behavior</div>
+                <p>Feed mainly on acacia leaves using long necks and tongues.</p>
+            </div>
+            <div class="behavior-section">
+                <div class="behavior-title">Loose Social Groups</div>
+                <p>Form temporary groups without strong social bonds.</p>
+            </div>
+            <div class="behavior-section">
+                <div class="behavior-title">Necking</div>
+                <p>Males fight using necks to establish dominance.</p>
+            </div>
+            <div class="tag-container">
+                <span class="tag">Herbivore</span>
+                <span class="tag">Tallest</span>
+                <span class="tag">Savanna</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. Hippopotamus -->
+    <div class="animal-card">
+        <img src="aikambe-assets/hippopotamus.jpg" alt="Hippopotamus" class="animal-image">
+        <div class="animal-header">
+            <h3>Hippopotamus</h3>
+            <span class="scientific-name">Hippopotamus amphibius</span>
+        </div>
+        <div class="animal-content">
+            <div class="behavior-section">
+                <div class="behavior-title">Semi-Aquatic Life</div>
+                <p>Spend most of the day in water to stay cool.</p>
+            </div>
+            <div class="behavior-section">
+                <div class="behavior-title">Night Grazing</div>
+                <p>Graze on land at night, traveling several kilometers.</p>
+            </div>
+            <div class="behavior-section">
+                <div class="behavior-title">Territorial Males</div>
+                <p>Males aggressively defend river territories.</p>
+            </div>
+            <div class="tag-container">
+                <span class="tag">Herbivore</span>
+                <span class="tag">Semi-Aquatic</span>
+                <span class="tag">Aggressive</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7. Nile Crocodile -->
+    <div class="animal-card">
+        <img src="aikambe-assets/nile-crocodile.jpg" alt="Nile Crocodile" class="animal-image">
+        <div class="animal-header">
+            <h3>Nile Crocodile</h3>
+            <span class="scientific-name">Crocodylus niloticus</span>
+        </div>
+        <div class="animal-content">
+            <div class="behavior-section">
+                <div class="behavior-title">Ambush Predator</div>
+                <p>Lie in wait near water edges to ambush prey.</p>
+            </div>
+            <div class="behavior-section">
+                <div class="behavior-title">Powerful Bite</div>
+                <p>Possess one of the strongest bites in the animal kingdom.</p>
+            </div>
+            <div class="behavior-section">
+                <div class="behavior-title">Parental Care</div>
+                <p>Females guard nests and assist hatchlings.</p>
+            </div>
+            <div class="tag-container">
+                <span class="tag">Carnivore</span>
+                <span class="tag">Reptile</span>
+                <span class="tag">Apex Predator</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 8. Plains Zebra -->
+    <div class="animal-card">
+        <img src="aikambe-assets/zebra.jpg" alt="Plains Zebra" class="animal-image">
+        <div class="animal-header">
+            <h3>Plains Zebra</h3>
+            <span class="scientific-name">Equus quagga</span>
+        </div>
+        <div class="animal-content">
+            <div class="behavior-section">
+                <div class="behavior-title">Herd Movement</div>
+                <p>Move in large herds during seasonal migrations.</p>
+            </div>
+            <div class="behavior-section">
+                <div class="behavior-title">Stripe Pattern</div>
+                <p>Stripes help confuse predators and deter insects.</p>
+            </div>
+            <div class="behavior-section">
+                <div class="behavior-title">Alertness</div>
+                <p>Use strong hearing and vision to detect danger.</p>
+            </div>
+            <div class="tag-container">
+                <span class="tag">Herbivore</span>
+                <span class="tag">Herd</span>
+                <span class="tag">Migratory</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 9. Cheetah -->
+    <div class="animal-card">
+        <img src="aikambe-assets/cheetah.jpg" alt="Cheetah" class="animal-image">
+        <div class="animal-header">
+            <h3>Cheetah</h3>
+            <span class="scientific-name">Acinonyx jubatus</span>
+        </div>
+        <div class="animal-content">
+            <div class="behavior-section">
+                <div class="behavior-title">Extreme Speed</div>
+                <p>The fastest land animal, built for short explosive chases.</p>
+            </div>
+            <div class="behavior-section">
+                <div class="behavior-title">Day Hunting</div>
+                <p>Hunt during daylight to avoid lions and hyenas.</p>
+            </div>
+            <div class="behavior-section">
+                <div class="behavior-title">Low Aggression</div>
+                <p>Often abandon prey when threatened by stronger predators.</p>
+            </div>
+            <div class="tag-container">
+                <span class="tag">Carnivore</span>
+                <span class="tag">Fast</span>
+                <span class="tag">Savanna</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 10. Leopard -->
+    <div class="animal-card">
+        <img src="aikambe-assets/leopard.jpg" alt="Leopard" class="animal-image">
+        <div class="animal-header">
+            <h3>Leopard</h3>
+            <span class="scientific-name">Panthera pardus</span>
+        </div>
+        <div class="animal-content">
+            <div class="behavior-section">
+                <div class="behavior-title">Solitary Hunter</div>
+                <p>Prefer solitary life and hunt mostly at night.</p>
+            </div>
+            <div class="behavior-section">
+                <div class="behavior-title">Tree Storage</div>
+                <p>Drag prey into trees to protect it from scavengers.</p>
+            </div>
+            <div class="behavior-section">
+                <div class="behavior-title">Adaptability</div>
+                <p>Can live in forests, savannas, and near human settlements.</p>
+            </div>
+            <div class="tag-container">
+                <span class="tag">Carnivore</span>
+                <span class="tag">Stealthy</span>
+                <span class="tag">Nocturnal</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+
+    <footer>
+        <p>&copy; 2025 Animal Behavior Studies. Celebrating the wonder of nature's diverse behavioral patterns.</p>
+    </footer>
+</body>
+</html>
