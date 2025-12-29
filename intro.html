@@ -3,19 +3,259 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction to Wildlife</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Introduction - Our Wild World</title>
+
+    <style>
+        /* ---------- Reset & Global Styles ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* ---------- Hero Section ---------- */
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .hero video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            padding: 2rem;
+            max-width: 800px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            animation: fadeInDown 1.5s ease forwards;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            animation: fadeInUp 1.5s ease forwards 0.5s;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            animation: fadeInUp 1.5s ease forwards 1s;
+        }
+
+        .cta-button:hover {
+            background: #45a049;
+        }
+
+        /* ---------- Content Sections ---------- */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 4rem 2rem;
+        }
+
+        .section {
+            background: white;
+            padding: 3rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            color: #2c5e2a;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .mission-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .mission-item {
+            background: #e8f5e9;
+            padding: 1.5rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .mission-item h3 {
+            color: #4CAF50;
+            margin-bottom: 0.5rem;
+        }
+
+        /* ---------- Footer ---------- */
+        .main-footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .main-footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        /* ---------- Animations ---------- */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <h1>Introduction to Wildlife</h1>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <video autoplay muted loop playsinline>
+            <!-- Place video inside project folder -->
+            <source src="wildlife-video.mp4.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1>Welcome to Our Wild World</h1>
+            <p>Discover the untamed beauty of nature and the creatures that call it home.</p>
+            <a href="#our-mission" class="cta-button">Begin Your Journey</a>
+        </div>
     </header>
+
+    <!-- MAIN CONTENT -->
     <main>
-        <p>Content coming soon.</p>
-        <a href="index.html">Back to Home</a>
+
+        <section id="our-mission" class="container">
+            <div class="section">
+                <h2>Our Mission</h2>
+                <p>
+                    We are dedicated to the conservation of wildlife and natural habitats.
+                    Through education, research, and preservation efforts, we strive to
+                    create harmony between humans and nature.
+                </p>
+                <p>
+                    This platform helps people understand ecosystems and the importance
+                    of protecting our planet.
+                </p>
+            </div>
+        </section>
+
+        <section id="what-we-do" class="container">
+            <div class="section">
+                <h2>What We Do</h2>
+
+                <div class="mission-grid">
+                    <div class="mission-item">
+                        <h3>📚 Educate</h3>
+                        <p>Spreading awareness about wildlife conservation.</p>
+                    </div>
+                    <div class="mission-item">
+                        <h3>🔬 Research</h3>
+                        <p>Supporting scientific studies on endangered species.</p>
+                    </div>
+                    <div class="mission-item">
+                        <h3>🌍 Conserve</h3>
+                        <p>Participating in real-world conservation projects.</p>
+                    </div>
+                    <div class="mission-item">
+                        <h3>📸 Inspire</h3>
+                        <p>Encouraging love for nature through visuals and stories.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
-    <footer>
-        <p>&copy; 2025 Wildlife Website</p>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <p>&copy; 2025 Wildlife. All Rights Reserved.</p>
+        <p><a href="index.html">Return to Main Homepage</a></p>
     </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const sections = document.querySelectorAll(".section");
+
+            const revealOnScroll = () => {
+                sections.forEach(section => {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top < window.innerHeight - 100) {
+                        section.classList.add("visible");
+                    }
+                });
+            };
+
+            revealOnScroll();
+            window.addEventListener("scroll", revealOnScroll);
+        });
+    </script>
+
 </body>
 </html>
