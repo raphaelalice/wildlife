@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Photography</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    text-align: center;
+}
+
+header {
+    background: #2e7d32;
+    color: white;
+    padding: 20px;
+}
+
+.slideshow-container {
+    width: 80%;
+    max-width: 800px;
+    height: 450px;
+    margin: 40px auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+
+.slides {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+
+.slide {
+    min-width: 100%;
+    height: 450px;
+    position: relative;
+    scroll-snap-align: center;
+    background: black;
+}
+
+/* IMAGE FIT FIX */
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.caption h2 {
+    margin: 0;
+    color: #a5d6a7;
+}
+
+.back {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background: #2e7d32;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>Wildlife Photography</h1>
+        <p>Tanzania is a country which is blessed with a lot of wildlife <br> 
+    A slideshow of  The common animals and birds found in Tanzania's National parks </p>
+    </header>
+    
+    <main>
+        <a class="back" href="index.html">← Back to Home</a>
+        <div class="slideshow-container">
+<div class="slides">
+
+    <div class="slide">
+        <img src="miguel assets/lion.jpg">
+        <div class="caption">
+            <h2>Lion</h2>
+            <p>Known as the king of the jungle, found in Serengeti and Ngorogoro.<br>Lions are apex predators and play a vital role in maintaining the balance of the ecosystem by controlling herbivore populations.
+ </p>
+        </div>
+    </div>
+
+    <div class="slide">
+        <img src="miguel assets/elephant.jpg">
+        <div class="caption">
+            <h2>African Elephant</h2>
+            <p>The African elephant is the largest land mammal on Earth.<br> Tanzania has one of the largest elephant populations in Africa.<br> Elephants are intelligent animals known for their strong social bonds and excellent memory.<br> They help shape the environment by creating water paths and dispersing seeds..</p>
+        </div>
+    </div>
+
+    <div class="slide">
+        <img src="miguel assets/leopard.jpg">
+        <div class="caption">
+            <h2>Leopard</h2>
+            <p>Leopards are solitary and highly adaptable predators.<br> They are excellent climbers and often drag their prey into trees to avoid scavengers.<br> In Tanzania, leopards are found in forests, savannahs, and mountainous regions.<br> Their spotted coat provides excellent camouflage..</p>
+        </div>
+    </div>
+
+    <div class="slide">
+        <img src="miguel assets/cheetah.jpg">
+        <div class="caption">
+            <h2>Cheetah</h2>
+            <p>Cheetahs are the fastest land animals, capable of reaching speeds up to 100 km/h. They rely on speed rather than strength to catch prey.<br> In Tanzania, cheetahs are commonly seen in open plains such as the Serengeti.<br> Unlike other big cats, cheetahs hunt during the day.</p>
+        </div>
+    </div>
+
+    <div class="slide">
+        <img src="miguel assets/giraffe.jpg">
+        <div class="caption">
+            <h2>Giraffe</h2>
+            <p>Giraffes are the tallest animals in the world and are easily recognized by their long necks and unique coat patterns.<br> Tanzania is home to the Masai giraffe.<br> They mainly feed on leaves from tall acacia trees and play a role in shaping vegetation growth.</p>
+        </div>
+    </div>
+ <div class="slide">
+        <img src="miguel assets/zebra.jpg">
+        <div class="caption"><h2>Zebra</h2><p>Zebras are herbivores known for their black-and-white stripes, which are unique to each individual.<br> They are a key part of the Great Migration in Tanzania, traveling long distances in search of fresh grazing land.<br> Zebras are important prey animals for predators like lions and hyenas.</p>
+</p></div>
+    </div>
+
+    <div class="slide">
+        <img src="miguel assets/rhino.jpg">
+        <div class="caption"><h2>Black Rhino</h2><p>The black rhinoceros is a critically endangered species due to poaching.<br> In Tanzania, black rhinos are heavily protected in areas like the Ngorongoro Crater.<br>  They have poor eyesight but an excellent sense of smell and hearing.<br>  Conservation efforts are helping to slowly increase their numbers.</p></div>
+    </div>
+
+    <div class="slide">
+        <img src="miguel assets/hippo.jpg">
+        <div class="caption"><h2>Hippopotamus</h2>
+            <p>Hippos spend most of their time in water to keep their bodies cool and come out at night to graze on grass.<br> They are found in rivers and lakes across Tanzania.<br> Despite their bulky appearance, hippos can run surprisingly fast on land and are considered very dangerous.</p></div>
+    </div>
+
+    <div class="slide">
+        <img src="miguel assets/crocodile.jpg">
+        <div class="caption"><h2>Nile Crocodile</h2><p>The Nile crocodile is one of the largest reptiles in the world.<br> It is commonly found in rivers such as the Mara River.<br> Crocodiles are powerful ambush predators and can remain motionless for long periods while waiting for prey.<br> play an important role in aquatic ecosystems.</p></div>
+    </div>
+
+    <div class="slide">
+        <img src="miguel assets/buffalo.jpg">
+        <div class="caption"><h2>African Buffalo</h2><p>African buffaloes are strong and unpredictable animals found in large herds.<br> They are common in Tanzanian national parks.<br> Buffaloes are important prey for large predators and are known for protecting injured members of their group.</p></div>
+    </div>
+
+   
+
+    <div class="slide">
+        <img src="miguel assets/flamingo.jpg">
+        <div class="caption"><h2>Flamingo</h2><p>Flamingos are famous for their pink coloration, which comes from their diet of algae and small crustaceans.<br> Tanzania’s Lake Natron is one of the most important breeding sites for flamingos in Africa.<br> Large flocks create a spectacular natural sight.</p></div>
+    </div>
+
+    <div class="slide">
+        <img src="miguel assets/ostrich.jpg">
+        <div class="caption"><h2>Ostrich</h2><p>The ostrich is the largest and heaviest bird in the world.<br> It cannot fly but can run at very high speeds using its powerful legs.<br> Ostriches are commonly found in Tanzania’s open grasslands and savannahs.<br> They lay the largest eggs of any bird species..</p></div>
+    </div>
+
+    <div class="slide">
+        <img src="miguel assets/eagle.jpg">
+        <div class="caption"><h2>African Fish Eagle</h2><p>The African fish eagle is a large bird of prey often seen near lakes and rivers.<br> It feeds mainly on fish and has a loud, distinctive call.<br> In Tanzania, it is commonly found near Lake Victoria and Lake Tanganyika.<br> It is a symbol of strength and freedom.</p></div>
+    </div>
+
+    <div class="slide">
+        <img src="miguel assets/secretarybird.jpg">
+        <div class="caption"><h2>Secretary Bird</h2><p>The secretary bird is known for its long legs and unique hunting style.<br>  It hunts snakes and small animals by stomping them with great force.<br> Found in Tanzania’s open savannahs, the secretary bird is admired for its elegance and effectiveness as a predator.</p></div>
+    </div>
+
+    <div class="slide">
+        <img src="miguel assets/hornbill.jpg">
+        <div class="caption"><h2>Hornbill</h2><p>Hornbills are medium to large birds with long curved beaks.<br>  They play an important role in seed dispersal, helping forests regenerate.<br>  In Tanzania, hornbills are found in woodlands and savannahs.<br> Some species form strong lifelong mating bonds..</p></div>
+    </div>
+
+    <div class="slide">
+        <img src="miguel assets/vulture.jpg">
+        <div class="caption"><h2>Vulture</h2><p>Vultures are scavengers that feed on dead animals, helping prevent the spread of diseases.<br> Tanzania is home to several vulture species, but many are endangered due to poisoning and habitat loss.<br> Conservation programs aim to protect these important birds.</p></div>
+    </div>
+
+    <div class="slide">
+        <img src="miguel assets/crane.jpg">
+        <div class="caption"><h2>Crowned Crane</h2><p>The crowned crane is a beautiful bird recognized by its golden crown of feathers.<br> It is often found in wetlands and grasslands.<br> In Tanzania, cranes are a symbol of grace and are important indicators of healthy ecosystems.</p></div>
+    </div>
+
+    <div class="slide">
+        <img src="miguel assets/kingfisher.jpg">
+        <div class="caption"><h2>Kingfisher</h2><p>Kingfishers are small, brightly colored birds commonly seen near rivers and lakes.<br> They hunt fish by diving quickly into the water.<br> Tanzania hosts many kingfisher species, making it a popular destination for birdwatchers.</p></div>
+    </div>
+
+    <div class="slide">
+        <img src="miguel assets/pelican.jpg">
+        <div class="caption"><h2>Pelican</h2><p>Pelicans are large water birds with long beaks and expandable throat pouches used for catching fish.<br> They are commonly seen in lakes such as Lake Manyara.<br> Pelicans often hunt cooperatively in groups.</p></div>
+    </div>
+
+    <div class="slide">
+        <img src="miguel assets/owl.jpg">
+        <div class="caption"><h2>Owl</h2><p>Owls are nocturnal birds known for their excellent night vision and silent flight.<br> In Tanzania, owls inhabit forests, savannahs, and farmlands. <br>They help control rodent populations and are important for ecological balance.</p></div>
+    </div>
+    
+
+</div>
+
+</div>
+
+
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Wildlife Website</p>
+    </footer>
+</body>
+
+
+</html>
