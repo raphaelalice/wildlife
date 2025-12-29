@@ -2,20 +2,189 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Endangered Species</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #2e7d32;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 30px;
+            background-color: #f4f4f4;
+        }
+
+        header h1 {
+            color: #2e7d32;
+        }
+
+        /* Main Content */
+        main {
+            padding: 40px;
+        }
+
+        .row {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+            align-items: center;
+        }
+
+        /* Text Block */
+        .text-box {
+            background-color: #e8f5e9;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+        }
+
+        .text-box h3 {
+            margin-top: 0;
+            color: #1b5e20;
+        }
+
+        /* Image Block */
+        .image-box {
+            flex: 1;
+        }
+
+        .image-box img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #2e7d32;
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <h1>Endangered Species</h1>
-    </header>
-    <main>
-        <p>Content coming soon.</p>
-        <a href="index.html">Back to Home</a>
-    </main>
-    <footer>
-        <p>&copy; 2025 Wildlife Website</p>
-    </footer>
+
+<!-- Navigation -->
+<nav>
+    <a href="endangered.html"><h1>Endangered Species</h1></a>
+</nav>
+
+<!-- Header -->
+<header>
+    <p>
+        Endangered species are animals that are at risk of extinction due to
+        habitat loss, poaching, climate change, and human activities.
+    </p>
+</header>
+
+<div style = "text-align: center; margin: 2rem 0;">
+    <button onclick="window.location.href = 'index.html'" style = "padding: 0.75rem 1.5rem; background-color:#1b5e20; color: white; border: none;border-radius: 4px; font-size: 1rem; cursor: pointer;"> Back to home </button>
+</div>
+
+<!-- Main Content -->
+<main>
+
+    <!-- African Elephant -->
+    <div class="row">
+        <div class="text-box">
+            <h3>African Elephant</h3>
+            <p>
+                African elephants are endangered mainly because of illegal
+                poaching for ivory and destruction of their natural habitats.
+                Conservation efforts are essential to protect these animals.
+            </p>
+        </div>
+
+        <div class="image-box">
+            <img src="fatma-assets/elephant.jpg" alt="African Elephant">
+        </div>
+    </div>
+
+    <!-- Black Rhino -->
+    <div class="row">
+        <div class="image-box">
+            <img src="fatma-assets/black-rhino.jpg" alt="Black Rhino">
+        </div>
+
+        <div class="text-box">
+            <h3>Black Rhino</h3>
+            <p>
+                Black rhinos are critically endangered due to poaching and slow
+                reproduction rates. Wildlife protection laws help reduce the
+                risk of extinction.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="text-box">
+            <h3>Red colobus</h3>
+            <p>
+                Tanzanian red colobus monkeys are endangered due to deforestation and hunting. 
+                Conserving forests and promoting sustainable land use are important to protect these primates.
+            </p>
+        </div>
+
+        <div class="image-box">
+            <img src="fatma-assets/red-colobus.jfif" alt="Red Colobus">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="image-box">
+            <img src="fatma-assets/pangolin.jpg" alt="Pangolin">
+        </div>
+
+        <div class="text-box">
+            <h3>Pangolin</h3>
+            <p>
+                Pangolins are critically endangered because they are heavily poached for their scales and meat.
+                Strict anti-trafficking laws and awareness campaigns are crucial for their survival.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="text-box">
+            <h3>African wild dog</h3>
+            <p>
+                African wild dogs are endangered due to habitat loss, disease, and human conflict.
+                Conservation programs aim to protect their populations and restore their natural habitats.
+            </p>
+        </div>
+
+        <div class="image-box">
+            <img src="fatma-assets/African-wild-dog.jpg" alt="African Wild Dog">
+        </div>
+    </div>
+
+</main>
+
+
+<!-- Footer -->
+<footer>
+    © 2025 Wildlife Website
+</footer>
+
 </body>
 </html>
